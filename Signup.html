@@ -36,6 +36,30 @@
 					<br>
 						Create your account below!
 					</span>
+					
+					<div class="wrap-input100 validate-input" data-validate="First name is required">
+						<input id="signUpFN" class="input100" type="text" name="signUpFN" placeholder="First name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Last name is required">
+						<input id="signUpLN" class="input100" type="text" name="signUpLN" placeholder="Last name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Please enter organization you're involved">
+						<input id="signUpOrg" class="input100" type="text" name="signUpOrg" placeholder="Organization">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-university" aria-hidden="true"></i>
+						</span>
+					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: LeroyJ@Kent.edu">
 						<input id="signUpemail" class="input100" type="text" name="SignUpemail" placeholder="Email">
@@ -97,21 +121,13 @@
 		appId: "1:412042474356:web:632fa3919b904f96d07221",
 		measurementId: "G-ZDTS78DVMK"
 	  };
-
-
-	  	export default !firebase.apps.length
-   		firebase.initializeApp(config).firestore()
-  		firebase.app().firestore()
-
-	  const auth = firebase.auth();
-	  const db = firebse.firestore();
+		firebase.initializeApp(firebaseConfig);
 	</script>
 
-	
-	
-	
+	<script src="js/savedata.js"></script>
 	<script src="js/auth.js"></script>
-	<script src="js/storedata.js"></script>
+
 
 </body>
 </html>
+
